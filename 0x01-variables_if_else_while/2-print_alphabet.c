@@ -15,5 +15,4 @@
 	putchar('\n');
 
 	getchar();
-
-	}
+}
