@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - A program that print various computer
- * return: 0
+ * main - entry point
+ * Return: 0 (success)
  */
 
 int main(void)
