@@ -14,5 +14,5 @@
 	putchar(ch);
 	putchar('\n');
 
-	getchar();
+	return (0);
 }
