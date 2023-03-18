@@ -1,4 +1,4 @@
-#inclued <stdio.h>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -7,8 +7,14 @@
 
 	int main(void)
 	{
-	while (a = 0; a <= 10; a++);
+		int d;
+	for (d = 0; d <= 9; d++)
+	{
 
-	print("%d, d\n");
+	printf("%d", d);
+	}
+	printf("\n");
+
+	return (0);
 
 }
