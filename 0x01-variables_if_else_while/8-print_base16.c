@@ -6,11 +6,13 @@
 
 	int main(void)
 {
-		int b;
-	for (b = 0x0; b < 0x16; b++)
-	{
-		putchar(%x:);
-	}
+	int b;
+
+	for (b = 0; b < 10; b++)
+		putchar(b + '0');
+
+	for (b = 0; b < 6; b++)
+		putchar(b + 'a');
 	putchar('\n');
 	return (0);
 }
