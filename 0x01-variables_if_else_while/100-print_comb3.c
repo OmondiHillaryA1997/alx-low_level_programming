@@ -3,26 +3,27 @@
 #include <time.h>
 
 /**
- * main- entry point
- * Return: always (0) (success)
+ * main -  prints all possible different combinations of two digits
+ *
+ * Return: Always 0 (success)
  */
 
-	int main(void)
+int main(void)
 {
-	int b;
-	int c = 0;
+	int c;
+	int d = 0;
 
-	while (c < 10)
+	while (d < 10)
 	{
-		b = 0;
-		while (b < 10)
+		c = 0;
+		while (c < 10)
 		{
-			if (c != b && c < b)
+			if (d != c && d < c)
 			{
-				putchar('0' + b);
+				putchar('0' + d);
 				putchar('0' + c);
 
-				if (b + c != 17)
+				if (c + d != 17)
 				{
 					putchar(',');
 					putchar(' ');
@@ -30,7 +31,7 @@
 			}
 			c++;
 		}
-		b++;
+		d++;
 	}
 	putchar('\n');
 	return (0);
