@@ -1,22 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - to print _putchar
+ * main- program that prints _putchar followed newline
  * Return: always (0) (success)
 */
 
-	int main(void)
+int main(void)
 {
-	char ch_putchar[] = "_putchar";
-
-	for (int count = 0; count < 20; count++)
-	{
-		if (ch_putchar[count] == '\0')
-		{
-			putchar('\n');
-		}
-		else
-			putchar(ch_putchar[count]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
