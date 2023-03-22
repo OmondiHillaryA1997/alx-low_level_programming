@@ -2,10 +2,10 @@
 
 /**
  * print_alphabet_x10 - A program that prints the aphabets ten times
- * Return: zero
+ * Return: null
 */
 
-	void print_alphabet_x10(void)
+void print_alphabet_x10(void)
 {
 	int t = 0;
 	char ch;
