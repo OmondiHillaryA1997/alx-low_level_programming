@@ -4,7 +4,7 @@
  * @c: is the argument that will be used
  * Return: 0
  */
-	int _isaplha(int c)
+int _isaplha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
