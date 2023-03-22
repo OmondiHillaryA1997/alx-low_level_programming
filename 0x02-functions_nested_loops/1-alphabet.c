@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - A program that prints the alphabet and a newline
- * Return: always (0) (success)
+ * Return: nothing
 */
 
 	void print_alphabet(void)
@@ -14,4 +14,5 @@
 			_putchar(ch);
 		}
 		_putchar('\n');
+		return;
 }
