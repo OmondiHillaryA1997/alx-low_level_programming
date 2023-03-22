@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check if there is a cli argv which acts as commit msg
+if [ $# -eq 0 ]; then
+    echo "Usage: gitter <commit message>" # show usage if no cli argument
+    exit 1
+fi
+
+
+# Do the staging, committing, and pushing
+git add --all;
+git commit -m "$1";
+git push;
+
+# Future enhancements:
+# - Initialize Git if not already inited
+# - Link the repo to a GitHub repo
+# - Check for unstaged files
+# - Confirmation
