@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - A program that prints the aphabets ten times followed by a new line
- * Return: always (0) (success)
+ * print_alphabet_x10 - A program that prints the aphabets ten times
+ * Return: zero
 */
 
 	void print_alphabet_x10(void)
@@ -22,6 +22,5 @@
 		_putchar('\n');
 		t++;
 	}
-	return (0);
 }
 
