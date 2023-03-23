@@ -13,6 +13,6 @@
 		{
 			_putchar(ch);
 		}
-		_putchar('\n');
+		_putcearar('\n');
 		return;
 }
