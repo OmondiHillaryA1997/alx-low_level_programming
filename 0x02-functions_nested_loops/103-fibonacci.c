@@ -7,22 +7,19 @@
 
 	int main(void)
 {
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	float tot_sum;
+	int a = 0, b = 1, temp = 0, sum = 0;
 
-	while (1)
+	while (temp < 4000000)
 	{
-		fibsum = fib1 + fib2;
-
-		if (fibsum > 4000000)
-			break;
-
-		if ((fibsum % 2) == 0)
-			tot_sum += fibsum;
-
-		fib1 = fib2;
-		fib2 = fibsum;
+		temp = a + b;
+		printf("%d\n", temp);
+		a = b;
+		b = temp;
+		if (temp % 2 == 0)
+		{
+			sum = sum + temp;
+		}
 	}
-	printf("%.0f\n", tot_sum);
+	printf("The sum is :- %d\n", sum);
 	return (0);
 }
