@@ -13,7 +13,7 @@ int main(void)
 
 	for (z = 1; z <= 100; z++)
 	{
-		if (z % 3 == 0 && z % 6 != 0)
+		if (z % 3 == 0 && z % 5 != 0)
 		{
 			printf(" Fizz");
 		} else if (z % 5 == 0 && z % 3 != 0)
