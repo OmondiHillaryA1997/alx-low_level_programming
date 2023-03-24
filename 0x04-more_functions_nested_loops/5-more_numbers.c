@@ -5,7 +5,7 @@
  * Return: null
  */
 
-void more_numbers(void);
+void more_numbers(void)
 {
 	int f = 0, g;
 
