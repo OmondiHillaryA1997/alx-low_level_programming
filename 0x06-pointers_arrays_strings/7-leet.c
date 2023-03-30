@@ -8,6 +8,7 @@
 
 char *leet(char *n)
 {
+	char *p
 	char s1[] = {'a', 'e', 't', 't', 'l'};
 	char s2[] = {4, 3, 0, 7, 1};
 	int i;
@@ -19,9 +20,9 @@ char *leet(char *n)
 		if (*n == s1[i] || *n == s1[i] - 32)
 			*n = s2[i] + '0';
 	}
-	n++;
+	p++;
 	}
-	return (n);
+	return (p);
 }
 
 
