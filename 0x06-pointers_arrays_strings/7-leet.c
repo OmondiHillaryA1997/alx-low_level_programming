@@ -12,12 +12,15 @@ char *leet(char *n)
 	char s2[] = {4, 3, 0, 7, 1};
 	int i;
 
-	for (i = 0; i < '\0'; i++)
+	while (*n)
+	{
+		for (i = 0; i < '\0'; i++)
 	{
 		if (*n == s1[i] || *n == s1[i] - 32)
 			*n = s2[i] + '0';
 	}
 	n++;
+	}
 	return (n);
 }
 
