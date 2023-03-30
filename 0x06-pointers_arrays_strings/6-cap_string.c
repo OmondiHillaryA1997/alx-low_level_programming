@@ -16,19 +16,18 @@ char *cap_string(char *s)
 		{
 			s[i] = s[i] - 32;
 		}
+	}
 		putchar(*s);
 		putchar(',');
 		putchar(';');
 		putchar('.');
 		putchar('!');
 		putchar('?');
-		putchar('(');
 		putchar('"');
 		putchar('(');
 		putchar(')');
 		putchar('{');
 		putchar('}');
-	}
 	putchar('\n');
 	return (s);
 }
