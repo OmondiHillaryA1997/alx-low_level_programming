@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "main.h"
 
 /**
@@ -11,17 +10,17 @@
 char *_strstr(char *haystack, char *needle)
 {
 
-        while (*haystack != '\0')
-        {
-                if (haystack == needle && *needle != '\0')
-                {
-                        needle++;
-                        if (*needle == '\0')
-                        {
-                                return (haystack);
-                        }
-                }
-        }
-        haystack++;
-        return (0);
+	while (*haystack != '\0')
+	{
+		if (haystack == needle && *needle != '\0')
+		{
+			needle++;
+			if (*needle == '\0')
+			{
+				return (haystack);
+			}
+		}
+	}
+	haystack++;
+	return (0);
 }

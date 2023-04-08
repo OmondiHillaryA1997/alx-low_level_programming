@@ -1,2 +1,2 @@
 STATIC LIBRARIES IN C
-- creation of static library with Functions
+- Creation og static library
