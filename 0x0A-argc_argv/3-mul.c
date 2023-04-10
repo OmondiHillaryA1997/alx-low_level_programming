@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	for (count = 1; count < argc; count++)
 	{
-		if (argc < 3 || argc > 3)
+		if (argc < 3)
 		{
 			printf("Error\n");
 
