@@ -16,4 +16,3 @@ void print_dog(struct dog *d)
 
 	printf("D_Name:%s\nD_Age:%f\nD_Owner:%s\n", (*d).name, (*d).age, (*d).owner);
 }
-
