@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	count = 0;
 	while (ch[count] != '\n')
 	{
-		ch[count] = str[i];
+		ch[count] = str[count];
 		count++;
 	}
 
