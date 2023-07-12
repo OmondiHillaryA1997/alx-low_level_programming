@@ -42,5 +42,5 @@ char *str_concat(char *s1, char *s2)
 		}
 		ch[i] = '\0';
 		return (ch);
-		free(ch);
+/* free(ch);*/
 }
