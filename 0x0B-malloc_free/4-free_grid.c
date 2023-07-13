@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * free_grid - Function to free 2 dimensional grid
+ * free_grid - Function that frees 2 dimensional grid
  * @grid: first parameter
  * @height: second parameter
- *
  * Return: pointer
  */
 
