@@ -11,17 +11,18 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *str1;
 
-	str1 = malloc(nmemb * sizeof(size));
+	str1 = malloc(nmemb * size);
 
 	if (size == 0 || nmemb == 0)
-
-	return (NULL);
+	{
+		return (NULL);
+	}
 
 	if (str1 == NULL)
-
-		return (NULL);
-
-	free(str1);
+	{
+	return (NULL);
+	}
 
 	return (str1);
+	free(str1);
 }
