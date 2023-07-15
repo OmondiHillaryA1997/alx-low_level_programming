@@ -21,6 +21,9 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
+	if (str == NULL)
+		return (NULL);
+
 	count = 0;
 	while (str[count] != '\0')
 	{
