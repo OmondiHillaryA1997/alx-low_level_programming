@@ -3,8 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Function that reurns a pointer to a newly allocated space in
- * memory which contains a copy of the string given as parameter
+ * _strdup - Function that reurns a pointer to a newly allocated space
  * @str: argument string
  * Return: (0) (success)
  */
