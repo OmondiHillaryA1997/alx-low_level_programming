@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strdup - Function that reurns a pointer to a newly allocated space in
+ * _strdup - Function that reurns a pointer to a newly allocated space in
  * memory which contains a copy of the string given as parameter
  * @str: argument string
  * Return: (0) (success)
@@ -31,5 +31,7 @@ char *_strdup(char *str)
 		count++;
 	}
 
+	ch[count] = '\0';
 	return (ch);
+	free(ch);
 }
