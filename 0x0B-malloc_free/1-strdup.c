@@ -31,7 +31,6 @@ char *_strdup(char *str)
 		count++;
 	}
 
-	ch[count] = '\0';
 	return (ch);
 	free(ch);
 }
