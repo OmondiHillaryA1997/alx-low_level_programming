@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
- * free_grid - Function that frees 2 dimensional grid
- * @grid: first parameter
- * @height: second parameter
+ * free_grid - Function that frees a 2 dimensional grid priviously created
+ * @grid: first argument
+ * @height: second argument
+ *
  * Return: pointer
  */
 
 void free_grid(int **grid, int height)
 {
+	int h;
 
-	int i = 0;
+	if (grid == NULL)
+		return;
 
-	while (i < height)
+	if (height <= 0)
+		return;
+
+	for (h = 0; h < height; h++)
 	{
-		free(grid[i]);
-		i++;
+		free(grid[h]);
 	}
 	free(grid);
 }
