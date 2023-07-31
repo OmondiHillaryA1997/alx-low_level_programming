@@ -11,9 +11,9 @@
 
 char *argstostr(int ac, char **av)
 {
-	char *ptrarg;
-	int index, c;
-	int a1, v = 0;
+	char *ptr;
+	int index, c, a1 = 0;
+	int t_len = 0;
 
 	if ((ac == 0) || (av == NULL))
 		return (NULL);
@@ -21,25 +21,25 @@ char *argstostr(int ac, char **av)
 	for (index = 0; index < ac; index++)
 	{
 		for (c = 0; av[index][c]; c++)
-			index++;
+			t_len++;
 	}
-	v += ac;
+	t_len += ac;
 
-	ptrarg = malloc(v * sizeof(char) + 1);
-	if (ptrarg == NULL)
+	ptr = malloc(sizeof(char) * (t_len + 1));
+	if (ptr == NULL)
 		return (NULL);
 
 	for (index = 0; index < ac; index++)
 	{
 		for (c = 0; av[index][c]; c++)
 		{
-			ptrarg[a1] = av[index][c];
+			ptr[a1] = av[index][c];
 			a1++;
 		}
-		if (ptrarg[a1] == '\0')
-		{
-			ptrarg[a1++] = '\n';
-		}
+
+		ptr[a1] = '\n';
+		a1++;
 	}
-	return (ptrarg);
+	ptr[a1++] = '\0';
+	return (ptr);
 }
