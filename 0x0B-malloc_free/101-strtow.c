@@ -18,10 +18,9 @@ int cnt_wrd(char *s)
 	for (; s[i] != '\0'; i++)
 	{
 		if (s[i] == ' ')
-			f =0;
-		if (f == 0)
 			f = 0;
-			else
+		else
+			if (f == 0)
 			{
 				f = 1;
 				d++;
@@ -29,6 +28,7 @@ int cnt_wrd(char *s)
 	}
 	return (d);
 }
+
 
 /**
  * **strtow - splits string to words
