@@ -1,0 +1,11 @@
+0x13 - 13 - MORE ON SINGLY LINKED LIST
+- Printing of elements in a list
+- Returning of elements in a linked list
+- Adding new node at the beginning of a list
+- Adding new node at the end of a list
+- Freeing of a list
+- Deleting of head node of a list
+- Returning nth node of a list
+- Returning the sum of all the fata of a list
+- Inserting a new node at a given position
+- Deleting the node at index indexof a list
