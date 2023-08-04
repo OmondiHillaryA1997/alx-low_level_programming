@@ -10,26 +10,21 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int result;
-	int p;
+	int index, cnt = 0;
 
-	result = 0;
-	while (result != 0)
+	index = 42;
+	while (index >= 0)
 	{
-		if ((n & result) == 0)
+		result = n >> index;
+		if (result & 1)
 		{
-			if (p)
-				_putchar (')');
+			_putchar('1');
+			cnt++;
 		}
-		else
-		{
-			_putchar ('1');
-			p = 1;
-		}
-		result >>= 1;
+		else if (cnt != 0)
+			_putchar('0');
+		index--;
 	}
-
-	if (!p)
-		_putchar ('0');
-
-	_putchar ('\n');
+	if (cnt == 0)
+		_putchar('0');
 }
