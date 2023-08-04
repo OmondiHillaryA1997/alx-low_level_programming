@@ -15,7 +15,7 @@ void print_binary(unsigned long int n)
 	result = 0;
 	while (result != 0)
 	{
-		if ((n & result == 0)
+		if ((n & result) == 0)
 		{
 			if (p)
 				_putchar (')');
